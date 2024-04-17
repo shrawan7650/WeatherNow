@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Merriweather Sans", sans-serif;
-    overflow-y: auto;
+   
 }
 
 :root {
@@ -18,7 +18,7 @@
 .wrapper {
     height: 100vh;
     width: 100vw;
-    overflow: hidden;
+
     color: var(--colorLight2);
     background-color: #112d4e;
     background-image: linear-gradient(160deg, #112d4e 0%, #3f72af 100%);
@@ -240,7 +240,7 @@ h1 {
     background-color: rgba(219, 226, 239, 0.5);
     padding: 0.8rem;
     border-radius: 5px;
-    width: 30%;
+    width: 50%;
     max-width: 200px;
     gap: 5px 0;
 }
@@ -281,3 +281,9 @@ h1 {
     aspect-ratio: 1 / 1;
     object-fit: cover;
 }
+
+@media screen and (max-width: 767px) {
+    .wrapper {
+      background-color: lightgreen;
+    }
+  }
